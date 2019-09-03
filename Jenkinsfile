@@ -8,14 +8,18 @@ node {
      sh 'mvn clean compile'
     }  
    }
-   stage('Test Run') {
+   stage('Unit Test') {
        withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
         sh 'mvn test'
      }  
    }
-   stage('Code Quality') {
+   stage('SonarQube Analysis') {
        withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-        sh 'mvn test'
+       sh 'mvn sonar:sonar \
+           -Dsonar.projectKey=maven-example-padman \
+           -Dsonar.organization=itrainpadman \
+           -Dsonar.host.url=https://sonarcloud.io \
+           -Dsonar.login=ef4b147fcb4eea67d0e0a5a182f4b85289f2c8c1'
        }
    } 
    stage('Archive to Jfrog') {
