@@ -14,6 +14,9 @@ node {
      }  
    }
    stage('Code Quality') {
+       withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
+        sh 'mvn test'
+       }
    } 
    stage('Archive to Jfrog') {
    } 
