@@ -19,6 +19,10 @@ node {
       sh 'mvn package'
     }
    }
+   stage('Deploy to Dev') {
+   
+    
+   }
    
 } 
    
