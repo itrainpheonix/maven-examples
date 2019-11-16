@@ -16,6 +16,11 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>5.3.1</junit.version>
         <jacoco.version>0.8.2</jacoco.version>
+        <sonar.projectKey>maven-example-phoenix</sonar.projectKey>
+        <sonar.organization>itrainphoenix</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>15b43472f6cdb6011c922ff5758bf0047fd285ca</sonar.login>     
+             
     </properties>
 
     <dependencies>
