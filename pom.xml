@@ -19,7 +19,7 @@
         <sonar.projectKey>maven-example-phoenix</sonar.projectKey>
         <sonar.organization>itrainphoenix</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>bb64848998e66da0237ebfe3eb9c07570329803c</sonar.login>     
+        <sonar.login>a7faa0f1a5b1dcba9fd9fa5ffc8dc08fca9c03fc</sonar.login>     
              
     </properties>
 
