@@ -16,10 +16,10 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>5.3.1</junit.version>
         <jacoco.version>0.8.2</jacoco.version>
-        <sonar.projectKey>maven-examples-suresh</sonar.projectKey>
-  <sonar.organization>suresh</sonar.organization>
+        <sonar.projectKey>thanos-devops-berlin_maven-examples</sonar.projectKey>
+  <sonar.organization>thanos-devops-berlin</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-  <sonar.login>b3e2eb1abd471b9103fe339eff3c13a0c84e68c8</sonar.login>     
+  <sonar.login>54125ea1c863b1ff3c4c73fa3aa5288c69a7cd8c</sonar.login>     
              
     </properties>
 
