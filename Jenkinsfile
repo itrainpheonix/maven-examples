@@ -15,7 +15,7 @@ node {
    }
   stage('Code Analysis') {
    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-      sh 'mvn verify sonar:sonar'
+      sh 'mvn clean verify sonar:sonar -Dsonar.login=6aebe04f8465fac27f4dd28744d56a7f4a82d21c'
     }
     
    }
